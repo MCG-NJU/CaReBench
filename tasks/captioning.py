@@ -1,4 +1,5 @@
 import sys
+import os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 import logging
 import functools
@@ -6,7 +7,6 @@ from tqdm import tqdm
 from models.modeling_captioners import AutoCaptioner
 from typing import List
 import json
-import os
 from torch.utils.data import DataLoader
 from accelerate import Accelerator
 from dataset.dataset import VideoTextDataset
